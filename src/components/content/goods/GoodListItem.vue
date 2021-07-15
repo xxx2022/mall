@@ -18,6 +18,11 @@ export default {
         return{}
       }
     }
+  },
+  methods:{
+    // imgLoad(){
+    //   this.$bus.$emit("itemImageLoad")
+    // }
   }
 }
 </script>
