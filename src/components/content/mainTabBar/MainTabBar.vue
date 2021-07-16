@@ -20,7 +20,7 @@
       </template>
       <template v-slot:item-text>
          <div>分类</div>
-      </template>>
+      </template>
       </tab-bar-item-01>
       <tab-bar-item-01 path='/cart' activeColor="deeppink">
         <template v-slot:item-icon >

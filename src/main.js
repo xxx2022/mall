@@ -1,8 +1,14 @@
-import { createApp,Vue } from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
 
+// import Distpicker from 'v-distpicker'
 
-// Vue.prototype.$bus =new  Vue()
+// createApp().component('v-distpicker', Distpicker);
+
+
+
+
+
 createApp(App).use(store).use(router).mount('#app')

@@ -5,6 +5,7 @@ const Home =()=>import('../views/home/Home.vue')
 const Category =()=>import('../views/category/Category.vue')
 const Cart =()=>import('../views/cart/Cart.vue')
 const Profile =()=>import('../views/profile/Profile.vue')
+const Detail =()=>import('../views/detail/Detail.vue')
 
 const routes = [
   {
@@ -31,10 +32,15 @@ const routes = [
     name:'Profile',
     component:Profile
   },
+  {
+    path:'/detail:iid',
+    name:'Detail',
+    component:Detail
+  }
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(process.env.BASE_URL),
+  history: createWebHashHistory(),
   
   // mode: 'history',
   routes

@@ -1,6 +1,10 @@
 <template>
   <div class="home">
-    <div class="home-nav"><nav-bar><template v-slot:center-nav>购物街</template></nav-bar></div>
+    <div class="home-nav">
+      <nav-bar>
+        <template v-slot:center-nav>购物街</template>
+      </nav-bar>
+    </div>
 
     <tab-control :titles="['流行','新款','精选']" 
       @tabClick="tabClick" 
@@ -79,6 +83,7 @@ export default {
       
     },
   methods:{
+    
     tabClick(index){
       // console.log(index);
       switch(index){
